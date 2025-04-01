@@ -1,0 +1,149 @@
+/* Genel stil ayarları */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Sayfada yatay kaydırma çubuğu olmasın */
+}
+
+/* Header kısmı */
+.header {
+    position: relative;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    z-index: 1; /* Header metni video'nun önünde olacak */
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+    background-color: #007bff; /* Mavi arka plan */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+.navbar div {
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: inline-flex; /* Öğeleri yatayda hizalamak için inline-flex */
+    gap: 30px; /* Öğeler arasında daha geniş boşluk bırakmak için gap kullanıyoruz */
+}
+
+.navbar-links li {
+    display: inline; /* Li öğelerinin yatayda sıralanmasını sağlar */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Bağlantılar arasında boşluk */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Üzerine gelindiğinde sarı renk */
+}
+
+
+/* Seçim Konteyneri (İletişim Formu için) */
+.selection-container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.selection-container:hover {
+    transform: scale(1.05); /* Hoverda büyüme efekti */
+}
+
+.selection-container h2 {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 12px;
+    margin: 10px;
+    font-size: 16px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Yarı şeffaf arka plan */
+    transition: all 0.3s ease; /* Hover efekti için geçiş */
+}
+
+select:hover {
+    background-color: rgba(255, 255, 255, 1); /* Hoverda daha opak hale gelme */
+    border-color: #3498db; /* Seçim kutularının kenarlığı hoverda değişiyor */
+}
+
+/* Seçim Kutuları Seçildiğinde */
+select:focus {
+    outline: none; /* Odaklandığında kenarlık görünmesin */
+    border-color: #8e44ad; /* Odaklanıldığında border rengi değişir */
+}
+
+/* Form alanları */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+form input, form textarea {
+    padding: 12px;
+    margin-bottom: 10px;
+    width: 80%;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+form button {
+    padding: 12px 30px;
+    background-color: #8e44ad;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3498db;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
